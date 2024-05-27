@@ -38,7 +38,7 @@ jobs:
           host: ${{ secrets.AZURE_VM_IP }}
           username: ${{ secrets.AZURE_VM_USERNAME }}
           key: ${{ secrets.AZURE_VM_KEY }}
-          scripts: |
+          script: |
             sudo systemctl stop webapp
             sudo rm -rf /app/*
             sudo mv ~/app/* /app
