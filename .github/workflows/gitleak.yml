@@ -1,10 +1,12 @@
 name: Gitleaks
+
 on:
   pull_request:
   push:
   workflow_dispatch:
   schedule:
-    - cron "0 19 * * *" # run
+    - cron "0 19 * * *" # run ddddd
+
 jobs:
   scan:
     name: gitleaks
